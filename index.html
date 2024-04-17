@@ -1,0 +1,300 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Vishnu Vuggepalli</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script>
+			function validateForm() {
+			  var name = document.getElementById("name").value;
+			  var email = document.getElementById("email").value;
+			  var message = document.getElementById("message").value;
+			
+			  // Email format validation using regex
+			  var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+			  if (!emailRegex.test(email)) {
+				alert("Please enter a valid email address");
+				return false;
+			  }
+			
+			  if (name == "" || subject == "" || message == "") {
+				alert("Please fill in all fields");
+				return false;
+			  }
+			}
+			function smoothScroll(target) {
+  				const targetElement = document.querySelector(target);
+  				const offsetTop = targetElement.offsetTop;
+  				const offsetLeft = targetElement.offsetLeft;
+
+  				// Smooth scroll animation
+  				window.scrollTo({
+   				top: offsetTop,
+    			left: offsetLeft,
+    			behavior: 'smooth'
+  				});
+			}
+			document.getElementById("downloadLink").addEventListener("click", function(event) {
+    		event.preventDefault(); // Prevent the default action of following the link
+    
+    		event.preventDefault(); // Prevent the default action of following the link
+    
+    		// Open the PDF in a new tab using JavaScript
+    		window.open("path/to/your/pdf/document.pdf", "_blank");
+				});
+		</script>
+	</head>
+	<body class="landing is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Vishnu Vuggepalli Portfolio</a></h1>
+						
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Vishnu Vuggepalli</h2>
+							<br><br><br><br><br><br><br><br><br>
+							<p>Active Learner and Coding Enthusiast<br />
+								Product Developer Skilled in Python, C#, .net Framework, Angular<br />
+								<ul class="icons">
+									<li><a href="https://www.linkedin.com/in/vishnuv-642/" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+									<li><a href="https://github.com/VishnuVuggepalli/" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									<li><a href="#cta" onclick="smoothScroll('#cta')" class="icon solid fa-envelope"><span class="label">Email</span></a></li><br><br>
+								
+							<ul class="actions special">
+								<li><a href="VVResume_SDEFinal.pdf" id="downloadLink" target="_blank" class="button primary">View Resume</a></li>
+							</ul>
+						</ul></p>
+						</div>
+						<a href="#one" class="more scrolly">Check out my Skills</a>
+					</section>
+					
+				<!-- Three -->
+				<section id="three" class="wrapper style3 special">
+					<div class="inner">
+						<header class="major">
+							<h2>Projects, Certifications and Publications</h2>
+						</header>
+						<ul class="features">
+							<li class="icon fa-flag">
+								<h3>AWS Certified Developer Associate</h3>
+								<p></p>
+							</li>
+						</ul>
+						<ul class="features">
+							<li class="icon fa-paper-plane">
+								<h3>Pipeline Management and Analysis</h3>
+								<p>Pioneered the implementation of GitHub-based Continuous Integration/Continuous Deployment (CI/CD)
+									pipelines, automating the entire build, test, and deployment process resulting in a noteworthy 30% reduction in
+									release cycles. Devised a dynamic Python script employing Selenium and Beautiful Soup to conduct web
+									scraping across a diverse array of 600+ websites. This initiative yielded an impressive 90% acceleration in the
+									speed of data extraction.</p>
+									<a href="https://github.com/VishnuVuggepalli/PipelineManagementusingSQL">Click to view the Project</a>
+							</li>
+							<li class="icon solid fa-laptop">
+								<h3>Cloud-based Facial Recognition Application</h3>
+								<p>Designed and developed an auto-scaling web tier of AWS PaaS-based facial recognition service using Python
+									Boto3,achieving a latency of 100-150ms enabling parallel processing using Amazon SQS queues..Implemented
+									AWS Lambda functions to execute the recognition model and fetch data from Amazon DynamoDB tables.</p>
+									<a href="https://github.com/VishnuVuggepalli/CloudBasedFacialRecognition">Click here to view the Project.</a>
+							</li>
+							<li class="icon solid fa-code">
+								<h3>Stance Detection on Twitter</h3>
+								<p>Aims to classify whether a given text supports, opposes, or is neutral towards a given claim or topic. Stance detection has applications in various domains such as political analysis, social media monitoring, and fake news detection. It typically involves training machine learning models on labeled datasets to classify the stance of text accurately.</p>
+								<a href="https://github.com/VishnuVuggepalli/Group16_StanceDetection">Click here to view the Project.</a>
+							</li>
+							<li class="icon solid fa-file">
+								<h3>Bulky MVC (Single Page Application)</h3>
+								<p>a web-based application developed using ASP.NET Core MVC and AngularJS. The system provides a platform for users to browse and purchase books. The system also includes an admin panel where administrators can manage book inventory, add new books, update book information, and view sales reports. Implemented features include user authentication, responsive UI design, RESTful APIs for communication between the client-side and server-side components, and integration with a SQL Server database for data storage.</p>
+								<a href="https://github.com/VishnuVuggepalli/Bulky_MVC">Click here to view the Project.</a>
+							</li>
+							<li class="icon fa-eye">
+								<h3>Driver Drowsiness Detection with Visual Behaviour Analysis</h3>
+								<p>Investigated the current landscape of numerical reasoning in Natural language processing research, revealing challenges in model generalization on out-of-distribution (OOD) data. Constructed a model employing T5, a Sequence-to-Sequence model, and executed training with diverse pre-training (BERT-like) and fine-tuning approaches. These strategies included digit masking and representing numbers in a scientific format, enabling the model to grasp numerical operations like addition and sorting. The outcome showcased a notable achievement, with the model attaining an accuracy of approximately 10\% on out-of-distribution data.</p>
+								<a href="https://github.com/VishnuVuggepalli/Driver-Drowsiness">Click here to view the Project.</a><br/>
+								<a href="https://journal.ijresm.com/index.php/ijresm/article/view/1470">Click here to view the Journal.</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<!-- Two -->
+				<section id="two" class="wrapper alt style2">
+					<section class="major" style="text-align: center; background-color:#2e3842;">
+						<h2><u>Professional Experience</u></h2>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/SCL_UMBC2.jpg" alt="" /></div><div class="content">
+							<h2><u>Sensorimotor Control Laboratory, UMBC</u><br /></h2>
+							<h3>Volunteer Researcher</h3>
+							<h4>October 2023 - Present</h4>
+							<p>-> Coordinated research on Absolute Pitch Music and Brain category, exploring the correlation between absolute pitch
+								perception and brain activity, specializing in Brain-Computer Interaction.</p>
+							<p>-> Researched in the investigation of BCI, its impact on dopamine levels and brain function. Achieved a significant 60%
+								increase in understanding neural responses to music stimuli</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/Arizona_State_University_logo.png" alt="" /></div><div class="content">
+							<h2><u>Aramark at Arizona State University</u><br /></h2>
+							<h3>Student Software Developer</h3>
+							<h4>November 2022 - Present</h4>
+							<p>-> Created and integrated a web application utilizing Python, JavaScript, Django, and PostgreSQL to monitor the health
+								and operations of over 4,000 client systems. Data cleaning and ETL (Extract, Transform, Load) procedures were
+								successfully completed for over 10 clients using Python on Databricks, resulting in high-quality, usable insights with a
+								98% decrease in mistakes and missing information.</p>
+							<p>-> Interacted with internal departments to create a data pipeline connecting different data sources and APIs to our
+								PostgreSQL database</p>
+							<p>-> Orchestrated the seamless integration of client-side functionalities using JavaScript, jQuery, and HTML within the .net
+								environment, resulting in a 65% enhancement in application responsiveness and a 50% reduction in page load times,
+								significantly improving user satisfaction</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/Accenture.png" alt="" /></div><div class="content">
+							<h2><u>Accenture</u><br /></h2>
+							<h3>Application Developer(.net)</h3>
+							<h4>September 2021 - July 2022</h4>
+							<p>-> Sped up Internal Application development with C# and Angular, integrating RESTful APIs for smooth
+								frontend-backend interaction. Enhanced API response time by 34% via a NodeJS and AWS-based model deployment
+								framework.</p>
+							<p>-> Spearheaded the implementation of comprehensive unit tests and end-to-end test suites for critical components, leading
+								to a remarkable 70% reduction in client-reported bugs and enhancing overall code quality by 60%.</p>
+							<p>-> Leveraged .net to develop robust applications, optimizing API response times by 33% through performance
+								enhancements. Successfully migrated 15 AWS queue consumers and 3 Web APIs from .net 3.1 to .net 6.0 within an
+								AWS-hosted Kubernetes cluster, supporting high-volume mortgage closings.</p>
+						</div>
+					</section>
+					<section class="spotlight">
+						<div class="image"><img src="images/DXC_Technology2.png" alt="" /></div><div class="content">
+							<h2><u>DXC Technology</u><br /></h2>
+							<h3>Associate Professional Product Developer</h3>
+							<h4>February 2021 - August 2021</h4>
+							<p>Adeptly provided Tier 2 operational support to information systems using programming languages (including COBOL,
+								.net, and C#), database queries, and SQL. Real-time connectivity with the Jenkins API has been enabled, giving users
+								with live build statuses, historical build records, integration and build test results, and pertinent information to help
+								them make better decisions.</p>
+							<p>Revamped the database architecture by optimizing SQL queries and integrating Entity Framework, resulting in a 55%
+								increase in database performance and a 70% improvement in data retrieval efficiency, ultimately enhancing user
+								experience</p>
+						</div>
+					</section>
+				</section>
+
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+						<div class="inner">
+							<header class="major">
+								<h2><u>Skills Summary</u></h2><br/>
+								<ul class="icons major">
+									<li><span class="icon solid fa-terminal major style1"></span></li>
+								</ul>
+								<h3>Languages and Frameworks:</h3>
+									<p> Python, Java, C#, .net Framework, .net Core, SQL, Angular, React, Node js, Typescript,
+										SpringBoot, Git, Ubuntu, Tableau, Jenkins, JavaScript, C++, C, PLSQL, OracleSOA, PHP, PySpark, Scala.</p>
+									<h3>Tools, Platforms and Technologies:</h3>
+									<p> AWS, Azure, Agile, Docker, Kubernetes, React Native, MySQL, SQLite, MongoDB,
+									Firebase, AWS SQS and S3 Buckets, JIRA, Android, Confluence, Service now, Apache, Entity Framework, LINQ, UNIX,
+									XML, Workday, HTML/CSS, Web Services - REST, SOAP, APIc, Postman, PostgreSQL, Java Spring, Ruby on Rails</p>
+							</header>
+							
+						</div>
+					</section>
+
+					<section id="three" class="wrapper style2 special" style="background-color: #3f4e66;">
+						<div class="inner">
+							<h2><u>Education</u> </h2><br/>
+							<ul class="icons major">
+								<li><span class="icon solid fa-school major style1"></span></li>
+							</ul>
+							<h2>Arizona State University</h2>
+							<div class="col-sm-6"><strong>Master of Science in Computer Science</strong></div>
+							<div class="col-sm-6">August 2022 - May 2024</div>
+							
+							<p>Courses: Foundations of Algorithms, Statistical Machine Learning, Data Mining(Visualisation), Knowledge Reasoning and Representation, Cloud Computing, </p>
+
+							<h3>Geethanjali College of Engineering and Technology(Affd JNTU,Hyderabad)</h3>
+							<div class="col-sm-6"><strong>Bachelor of Technology in Computer Science Engineering</strong></div>
+							<div class="col-sm-6">September 2017 - July 2021</div>
+							<p>Courses: Data Strutctures and Algorithms, Design Architecture, Software Engineering, Neural etworks, Big Data Analytics, Information Scruity(Advanced)</p>
+						</div>
+					</section>
+					
+					
+					
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							
+							<header>
+								<h2>Contact me at !-!</h2>
+								<section class="alt">
+									<h3>Address</h3>
+									<p style="color: wheat;">San Jose, California, USA</p>
+								</section>
+								<section>
+									<h3>Email</h3>
+									<p><a href="#" style="color: wheat;">vishnu.vuggepalli@gmail.com</a></p>
+								</section>
+							</header>
+							<ul class="actions stacked">
+								<form method="post" action="mailto:vishnu.vuggepalli@gmail.com">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Name</label>
+										<input type="text" name="name" id="name" />
+									</div>
+									<div class="field">
+										<label for="email">Email</label>
+										<input type="text" name="email" id="email" />
+									</div>
+									<div class="field">
+										<label for="message">Message</label>
+										<textarea name="message" id="message" rows="3"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<br/><li><input type="submit" style="width: 320px; margin: 0 auto;"value="Mail Me!!!" enctype="text/plain" onsubmit="return validateForm()" /></li>
+								</ul>
+							</form>
+							
+								
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						
+						<ul class="copyright">
+							<li>&copy; Vishnu Vuggepalli</li><li>Design: <a>VV</a></li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
